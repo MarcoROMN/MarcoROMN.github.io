@@ -47,9 +47,6 @@
           />
         </div>
 
-        <iframe src="https://www.youtube.com/@gronkh" name="iframe" id="iframe" scrolling="yes" frameborder="0" marginheight="0px" marginwidth="0px" height="400" width="600">
-        </iframe>
-
         <!-- Sag was über Dich -->
         <div class="bio">
           <h1>Marcos Webseite</h1>
@@ -59,6 +56,15 @@
             kann sie sehen.
           </p>
         </div>
+
+        <div>
+        <iframe width="750" height="500" src="https://www.youtube.com/embed/IHxAxS8lksU?si=qKzUj1YYqbyOpPLs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      </div>
+
+      <div>
+        <iframe src="https://wiki.selfhtml.org/wiki/Startseite" width="1500" height="1000" name="SELFHTML_in_a_box"></iframe>
+      </div> 
+
 
         <div class="network">
           <ul>
@@ -144,5 +150,17 @@
         </div>
       </div>
     </div>
+    <script>
+      document.addEventListener("DOMContentLoaded", function() {
+        const iframe = document.getElementById('iframe');
+        if (iframe) {
+          const iframeDocument = iframe.contentDocument || iframe.contentWindow.document;
+          const title = iframeDocument.querySelector('title');
+          if (title) {
+            document.title = title.textContent;
+          }
+        }
+      });
+    </script>
   </body>
 </html>

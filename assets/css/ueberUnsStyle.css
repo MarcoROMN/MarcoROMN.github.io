@@ -1,0 +1,55 @@
+* {
+  box-sizing: border-box;
+}
+
+h1 {
+  color: blue;
+  background-color: aliceblue;
+}
+
+body {
+  background-color: grey;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+  display: block;
+}
+
+a:hover {
+  color: red;
+}
+
+div {
+  color: green;
+}
+
+img {
+  width: 600px;
+}
+
+p {
+  color: white;
+  background-color: black;
+  width: 600px;
+  padding: 10px;
+  border: 3px yellow solid;
+  box-sizing: border-box;
+}
+
+#twoP {
+  background-color: brown;
+  color: green;
+  border-color: green;
+}
+
+#threeP {
+  background-color: greenyellow;
+  color: darkred;
+}
+
+.bordernew {
+  border-color: blue;
+}
