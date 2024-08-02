@@ -1,0 +1,15 @@
+/* IPHONE Pixel 1334 x 750px 
+TABLET 2043 x 1536px 
+PC 1680 x 1050px */
+
+/* IPHONE */
+@media (max-width: 750px) {
+}
+
+/* TABLET */
+@media (max-width: 1536px) and (min-width: 751px) {
+}
+
+/* PC */
+@media (min-width: 1537px) {
+}
