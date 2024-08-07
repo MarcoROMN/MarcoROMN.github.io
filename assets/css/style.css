@@ -26,7 +26,7 @@ ul,
 li,
 p {
   margin: 0;
-  padding: 10;
+  padding: 0;
   border: 0;
   font-size: 100%;
   font: inherit;
@@ -256,4 +256,63 @@ body.page-template-page-fullsingle-me h1 {
 
 .bio {
   max-width: 600px;
+}
+
+/* SCRIPT FÜR POPUPS */
+#popup {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 15px;
+  background-color: white;
+  color: black;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+
+  width: 500px;
+  text-align: center;
+}
+
+#overlay {
+  display: none; /* Anfangs versteckt */
+  position: fixed;
+  background-color: white;
+  color: black;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); /* Hintergrundfarbe */
+}
+
+#popup p {
+  margin: 20px 0;
+}
+
+#popup #link {
+  color: white;
+  background-color: blue;
+  display: inline-block;
+  margin: 10px 0;
+  text-decoration: none;
+  border: black solid 4px;
+  border-radius: 5px; /* Kanten abrunden */
+  padding: 10px 20px;
+  width: 150px; /* Einheitliche Breite */
+  box-sizing: border-box;
+}
+
+#popup #closePopup {
+  background-color: black;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  margin: 10px;
+  border-radius: 5px; /* Kanten abrunden */
+  width: 150px; /* Einheitliche Breite */
+  box-sizing: border-box;
 }

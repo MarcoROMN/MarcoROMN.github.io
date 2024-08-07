@@ -2,14 +2,112 @@
 TABLET 2043 x 1536px 
 PC 1680 x 1050px */
 
+* {
+  box-sizing: border-box;
+  padding: 0 0 0 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  max-width: 600px;
+  margin: auto;
+}
+.block {
+  padding: 15px;
+}
+
+.blockUeberschrift {
+  padding: 20px;
+}
 /* IPHONE */
 @media (max-width: 750px) {
+  /* ANZEIGEN */
+  .iphone {
+    display: flex;
+  }
+  .tab {
+    display: none;
+  }
+  .pc {
+    display: none;
+  }
+  .row {
+    display: flex;
+    justify-content: space-between;
+  }
+  .col {
+    flex: 1;
+  }
+  .col.lo {
+    color: green;
+    background: green;
+  }
+  .col.mid {
+    color: white;
+    background: white;
+  }
+  .col.ru {
+    color: red;
+    background: red;
+  }
 }
 
 /* TABLET */
 @media (max-width: 1536px) and (min-width: 751px) {
+  .iphone {
+    display: none;
+  }
+  .tab {
+    display: flex;
+  }
+  .pc {
+    display: none;
+  }
+  .row {
+    display: block;
+  }
+  .col {
+    flex: 1;
+  }
+  .col.lo {
+    color: black;
+    background: black;
+  }
+  .col.mid {
+    color: red;
+    background: red;
+  }
+  .col.ru {
+    color: yellow;
+    background: yellow;
+  }
 }
 
 /* PC */
 @media (min-width: 1537px) {
+  .iphone {
+    display: none;
+  }
+  .tab {
+    display: none;
+  }
+  .pc {
+    display: flex;
+  }
+  .row {
+    display: flex;
+    flex: 1;
+  }
+  .col {
+    flex: 1;
+  }
+  .col.lo {
+    color: blue;
+    background: blue;
+  }
+  .col.mid {
+    color: white;
+    background: white;
+  }
+  .col.ru {
+    color: red;
+    background: red;
+  }
 }
